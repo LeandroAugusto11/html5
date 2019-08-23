@@ -1,0 +1,69 @@
+/**
+* Folha de estilo do site html5 + css4
+* @author Leandro Augusto
+*/
+
+/********************* Importando Fontes ***********************/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700i|Open+Sans&display=swap');
+/********************* Principal ******************************/
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #cfd8dc;
+}
+
+/*
+# (id) . (class) . Podemos criar um estilo para a TAG, id ou class
+*/
+
+#main{
+   max-width: 1024px;
+   background-color: #eceff1;
+   margin: 0 auto; /* centraliza a div */
+   margin-top: 50px; /* box model */
+}
+
+/************************** header *****************************************/
+header{
+    width: 100%;
+    background-color: #ffff00;
+}
+
+header img{
+    /* é possível redimensionar a imagem diretamente pelo css */
+    /* Não recomendavel por questões de desempenho */
+    width: 195px;
+    height: 150px;
+    margin-left: 40px;
+
+}
+
+/***********************Trorna todas as imagens Responsivas******************/
+img{
+    max-width: 100%;
+}
+
+/* o bloco abixo modifica o comportamento do CSS para telas
+com tamanho de até 480px */
+@media screen and (max-width: 480px){
+    body{
+        margin: 0; /* Zero todas as margens */
+    }
+
+    #main{
+        margin: 0;
+    }
+ /************************* header ****************************/
+    header{
+        text-align: center; /* centralizar todos elementos */
+    }
+
+    header img{
+        margin: 0;
+    }
+
+
+
+
+
+}
+    
